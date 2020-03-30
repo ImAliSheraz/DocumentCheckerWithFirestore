@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376405543465",
+    "firebase_url": "https://documentcheckerwithfires-9d090.firebaseio.com",
+    "project_id": "documentcheckerwithfires-9d090",
+    "storage_bucket": "documentcheckerwithfires-9d090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376405543465:android:bf04e91a49754556c16a38",
+        "android_client_info": {
+          "package_name": "com.buddytrainers.documentcheckerwithfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376405543465-h9rc2lba4k6eq6ta3cte31mokr8pa08i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo3ritEUpdH5tVcCDhef_PINMpO9aYNrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376405543465-h9rc2lba4k6eq6ta3cte31mokr8pa08i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

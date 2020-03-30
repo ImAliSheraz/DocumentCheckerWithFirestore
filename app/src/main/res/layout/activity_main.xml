@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/documentIDET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Document ID"
+        android:maxLength="20"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/studentNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/documentIDET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Client Name"
+        android:maxLength="20"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/studentCityET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Client City"
+        android:maxLength="20"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/addValuesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentCityET"
+        android:onClick="addValuesToFirebaseFirestore"
+        android:text="ADD Values" />
+
+    <Button
+        android:id="@+id/getValuesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addValuesBtn"
+        android:onClick="getDataFromFirebaseFirestore"
+        android:text="Fetch Values" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadedDataTV"
+        android:layout_below="@id/getValuesBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/updateValuesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloadedDataTV"
+        android:onClick="updateValuesOfDocumentField"
+        android:text="Fetch Collection" />
+
+    <Button
+        android:id="@+id/deleteValuesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateValuesBtn"
+        android:onClick="deleteFieldValue"
+        android:text="Delete Document" />
+    <Button
+        android:id="@+id/deleteCollectionBtn"
+        android:layout_below="@id/deleteValuesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Collection"
+        android:onClick="deletecollection"
+        />
+
+</RelativeLayout>
